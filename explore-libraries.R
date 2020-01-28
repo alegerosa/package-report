@@ -1,13 +1,14 @@
 #' Which libraries does R search for packages?
-
+library(tidyverse)
 # try .libPaths(), .Library
-
+.libPaths()
 
 #' Installed packages
 
 ## use installed.packages() to get all installed packages
 ## if you like working with data frame or tibble, make it so right away!
 ## remember to use View(), dplyr::glimpse(), or similar to inspect
+packages <- as_tibble(installed.packages())
 
 ## how many packages?
 
