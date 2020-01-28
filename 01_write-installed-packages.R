@@ -13,4 +13,4 @@ packages <- as_tibble(installed.packages()) %>%
          Priority,
          Built)
 
-write_csv(packages, here("data", "installed_packages.csv"))
+write_csv(packages, here("data", "installed-packages.csv"))
